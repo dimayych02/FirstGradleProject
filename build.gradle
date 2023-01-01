@@ -25,6 +25,11 @@ dependencies {
     implementation 'io.qameta.allure:allure-selenide:2.12.1'
 
 }
+def uiTest = tasks.register("PageObjectPattern", Test) {
+    useJUnitPlatform {
+        includeTags "UI-Mail"
+    }
+}
 
 test {
     useJUnitPlatform()

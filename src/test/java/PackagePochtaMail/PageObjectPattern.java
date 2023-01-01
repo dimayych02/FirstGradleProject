@@ -1,9 +1,10 @@
 package PackagePochtaMail;
 
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
+@Tag("UI-Mail")
 @ExtendWith(TeslListener.class)
 public class PageObjectPattern   {
 
